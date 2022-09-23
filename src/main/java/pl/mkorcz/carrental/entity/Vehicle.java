@@ -10,19 +10,24 @@ public class Vehicle {
 	private Integer id;
 	private String brand;
 	private String model;
+	@Column(name="carbodystyle")
 	private String carBodyStyle;
+	@Column(name="yearofmanufacture")
 	private String yearOfManufacture;
 	private String color;
+	@Column(name="regnumber")
 	private String regNumber;
+	@Column(name="vehiclemileage")
 	private String vehicleMileage;
 	private String status;
-	private float pricePerDay;
+	@Column(name="priceperday")
+	private Double pricePerDay;
 
 	public Vehicle() {
 	}
 
 	public Vehicle(Integer id, String brand, String model, String carBodyStyle, String yearOfManufacture, String color,
-			String regNumber, String vehicleMileage, String status, float pricePerDay) {
+			String regNumber, String vehicleMileage, String status, Double pricePerDay) {
 		super();
 		this.id = id;
 		this.brand = brand;
@@ -108,11 +113,12 @@ public class Vehicle {
 		this.status = status;
 	}
 
-	public float getPricePerDay() {
+	public Double getPricePerDay() {
 		return pricePerDay;
 	}
 
-	public void setPricePerDay(float pricePerDay) {
+	public void setPricePerDay(Double pricePerDay) {
 		this.pricePerDay = pricePerDay;
 	}
+
 }
