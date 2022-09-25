@@ -10,5 +10,6 @@ import pl.mkorcz.carrental.entity.Vehicle;
 public interface VehicleService {
 
 	public Vehicle saveVehicle(Vehicle vehicle);
+
 	public List<Vehicle> getAllVehicles();
 }
