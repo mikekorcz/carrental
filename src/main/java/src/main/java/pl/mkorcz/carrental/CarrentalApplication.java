@@ -1,4 +1,4 @@
-package pl.mkorcz.carrental;
+package src.main.java.pl.mkorcz.carrental;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

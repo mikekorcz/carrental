@@ -23,11 +23,4 @@ public class VehicleServiceImpl implements VehicleService {
 	public List<Vehicle> getAllVehicles() {
 		return vehicleRepository.findAll();
 	}
-
-	@Override
-	public void deleteVehicleById(Integer id) {
-		vehicleRepository.deleteById(id);
-
-	}
-
 }
