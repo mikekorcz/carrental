@@ -12,4 +12,7 @@ public interface VehicleService {
 	public Vehicle saveVehicle(Vehicle vehicle);
 
 	public List<Vehicle> getAllVehicles();
+
+	public void deleteVehicleById(Integer id);
+
 }
