@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 
 import pl.mkorcz.carrental.entity.Vehicle;
 import pl.mkorcz.carrental.repository.VehicleRepository;
+import pl.mkorcz.carrental.service.VehicleService;
 
 @Service
 public class VehicleServiceImpl implements VehicleService {
@@ -23,4 +24,11 @@ public class VehicleServiceImpl implements VehicleService {
 	public List<Vehicle> getAllVehicles() {
 		return vehicleRepository.findAll();
 	}
+
+	@Override
+	public void deleteVehicleById(Integer id) {
+		vehicleRepository.deleteById(id);
+
+	}
+
 }
