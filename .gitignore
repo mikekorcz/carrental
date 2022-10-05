@@ -191,6 +191,6 @@ dist/
 nbdist/
 .nb-gradle/
 
-/src/main/resources/application.properties
+application2-prod.properties
 
 # End of https://www.toptal.com/developers/gitignore/api/java,intellij+all,netbeans,eclipse
